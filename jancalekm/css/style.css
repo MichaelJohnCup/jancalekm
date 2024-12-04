@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --background-color: #112e42;
+    --second-background-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #80FF00;
+
+}
+
+html {
+    font-size: 70%;
+    overflow-x: hidden;    
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: transparent;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: 2s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+    background: url('');
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content {
+    max-width: 60rem;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.console {
+    white-space: pre-wrap;
+    overflow: hidden;
+    border-right: 20px solid #80FF00;
+    display: inline-block;
+    box-sizing: border-box;         
+    height: 47px;        
+    font-size: 20px;      
+    animation: blink 0.7s steps(1) infinite;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif; 
+    font-style: normal;   
+    color: #80FF00; 
+    line-height: 1.2;
+    position: relative;
+    padding: 0px;
+    margin: 2px;
+}
+
+@keyframes blink {
+    0% { border-right-color: #80FF00; }
+    50% { border-right-color: transparent; }
+    100% { border-right-color: #80FF00; }
+}
+
+.home-content p {
+    font-size: 2rem;
+}
+
+.btn-contact {
+    margin-top: 2.5rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--background-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: 5s ease;
+}
+
+.btn-contact .btn {
+    box-shadow: none;
+    color: var(--second-background-color);
+}
+
+.home-social {
+    position: absolute;
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-social a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--background-color);
+    z-index: 1;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--background-color);
+    padding-bottom: 6rem;
+}
+
+.heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.about-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.about-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+}
+
+
+.about-img .frame-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--background-color);
+    border-bottom: .2rem solid var(--background-color);
+    border-left: .8rem solid var(--main-color);
+    border-right: .8rem solid var(--main-color);
+    box-sizing: border-box;
+}
+
+.about-content {
+    flex: 1;
+    text-align: center;
+    max-width: 60%;
+
+}
+
+.about-content h3 {
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem;
+}
+
+.about-inner1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.about-img1 {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img1 img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+}
+
+
+.about-img1 .frame-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--background-color);
+    border-bottom: .2rem solid var(--background-color);
+    border-left: .8rem solid var(--main-color);
+    border-right: .8rem solid var(--main-color);
+    box-sizing: border-box;
+}
+
+.about-content1 {
+    flex: 1;
+    text-align: center;
+    max-width: 60%;
+
+}
+
+.about-content1 h3 {
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.about-content1 p {
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem;
+}
+
+/* skill rozložení*/
+
+.skill {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--background-color);
+    padding-bottom: 6rem;
+}
+
+.skill-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.skill-column {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.skill-column h3 {
+    font-size: 2rem;
+}
+
+.skill-column h2 {
+    font-size: 4rem;
+}
+
+.skill-box {
+    margin-top: 20px;
+    flex-direction: row;
+}
+
+.progress {
+    text-align: center;
+}
+
+
+/* vyplňovací pole */  
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.image-box {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+    filter: grayscale(100%); /* Černobílý efekt */
+}
+
+/* Obrázek na pozadí */
+.image1 {
+    background-image: url(''); /* Lokální obrázek */
+}
+
+.image2 {
+    background-image: url(''); /* Lokální obrázek */
+}
+
+.image3 {
+    background-image: url(''); /* Náhradní obrázek z URL */
+}
+
+.image4 {
+    background-image: url(''); /* Náhradní obrázek z URL */
+}
+
+.image5 {
+    background-image: url(''); /* Náhradní obrázek z URL */
+}
+
+.image6 {
+    background-image: url(''); /* Náhradní obrázek z URL */
+}
+
+/* Zelená vyplňovací vrstva */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 0, 1); /* Zelená barva */
+    mix-blend-mode: multiply; /* Směšovací režim - aplikuje zelenou pouze na světlé části */
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 1s ease;
+}
+
+/* Viditelnost vrstvy na základě procent */
+.visible {
+    transform: scaleY(1);
+}
+
+.image-box .overlay {
+    filter: none; 
+}
+
+/* porfolio rozložení*/
+
+.portfolio {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--background-color);
+    padding-bottom: 6rem;
+}
+
+.heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.portfolio-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.portfolio-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+}
+
+
+.portfolio-img .frame-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--background-color);
+    border-bottom: .2rem solid var(--background-color);
+    border-left: .8rem solid var(--main-color);
+    border-right: .8rem solid var(--main-color);
+    box-sizing: border-box;
+}
+
+.portfolio-content {
+    flex: 1;
+    text-align: center;
+    max-width: 60%;
+
+}
+
+.portfolio-content h3 {
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.portfolio-content p {
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem;
+}
+
+.portfolio-inner1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.portfolio-img1 {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-img1 img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+}
+
+
+.portfolio-img1 .frame-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--background-color);
+    border-bottom: .2rem solid var(--background-color);
+    border-left: .8rem solid var(--main-color);
+    border-right: .8rem solid var(--main-color);
+    box-sizing: border-box;
+}
+
+.portfolio-content1 {
+    flex: 1;
+    text-align: center;
+    max-width: 60%;
+
+}
+
+.portfolio-content1 h3 {
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.portfolio-content1 p {
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem;
+}
+
+.contact {
+    min-height: auto;
+    padding: 8rem;
+}
+
+.contact form {
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact form .input-field {
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+
+.contact form .input-field input,
+.contact form .textarea-field textarea{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+}
+
+.contact form .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder {
+    color: var(--text-color);
+}
+
+.contact form .textarea-field {
+    position: relative;
+    margin: .8rem 0 2rem;
+    display: flex;
+}
+.contact form .textarea-field textarea {
+    resize: none;
+}

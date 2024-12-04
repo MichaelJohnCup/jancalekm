@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Nejmodernjější vykreslování -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Kompatibilita pro mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+    <title>Michal Jančálek - Personal website</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!-- Design headeru -->
+    <header class="header">
+        <a href="#" class="logo">Michal Jančálek</a>
+
+        <div class="bx bx-menu" id="menu-icon" ></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Domů</a>
+            <a href="#about">O mně</a>
+            <a href="#skill">Dovednosti</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Kontakt</a>
+            <button onclick="setLanguage('cs')">Čeština</button>
+            <button onclick="setLanguage('en')">English</button>
+        </nav>
+    </header>
+
+    <!-- Design home -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Ahoj, jsem <span>Michal Jančálek</span></h1>
+            <div id="console" class="console"></div>
+            <p>Vítejte na mých stránkách! Jsem začínající frontend developer, který se rozhodl proměnit svůj koníček ve svou profesní cestu. Svět webového vývoje mě uchvátil svou dynamikou a možnostmi tvorby, a proto se neustále vzdělávám v nových technologiích, abych mohl tvořit moderní a funkční webové stránky.</p>
+
+            <p>Každý projekt je pro mě příležitostí se učit, zlepšovat a přinášet nové nápady do online světa. Těším se na výzvy, které mě posouvají dál, a věřím, že i jako začátečník mohu nabídnout svěží pohled a nadšení pro detail.</p>
+            <div class="btn-contact"> 
+                <a href="#" class="btn">Kontaktujte mě</a>
+            </div>
+        </div>
+        
+        <div class="home-social">
+            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+
+        </div>
+    </section>
+
+    <!--Design about-->
+    <section class="about" id="about">
+        <h2 class="heading"><span>O mě</span></h2>
+    
+        <div class="about-inner">
+            <div class="about-img">
+                <img src="images/Frontend.jpg" alt="">
+                <span class="frame-spin"></span>
+            </div>
+    
+            <div class="about-content">
+                <h3>Frontend developer!</h3>
+                <p>Frontend development je pro mě nejen prací, ale především vášní. Baví mě vytvářet interaktivní a vizuálně přitažlivé webové stránky, které poskytují skvělý uživatelský zážitek. Neustále se učím nové technologie a trendy, abych mohl přinášet moderní a efektivní řešení.</p>
+
+                <p>Pokud vás zajímá, jaké projekty jsem už vytvořil, stačí kliknout na projekty a můžete se na ně podívat!</p>
+            </div>
+        </div>
+         
+        <div class="about-inner1">
+            <div class="about-content1">
+                <h3>Backend developer!</h3>
+                <p>Backend development mě fascinuje svou komplexností a možnostmi, které přináší do tvorby robustních a spolehlivých aplikací. </p>
+
+                <p>Pokud vás zajímá, na čem jsem pracoval, klikněte a podívejte se na některé z mých projektů! </p>
+            </div>
+
+            <div class="about-img1">
+                <img src="images/Backend.jpg" alt="">
+                <span class="frame-spin"></span>
+            </div>
+        </div>
+
+        <div class="about-inner">
+            <div class="about-img">
+                <img src="images/Gamedesign.jpg" alt="">
+                <span class="frame-spin"></span>
+            </div>
+    
+            <div class="about-content">
+                <h3>Herní developer!</h3>
+                <p>Game development pro mě představuje spojení dvou mých největších vášní – tvorby a hraní her. Jako dlouholetý hráč mám hluboké porozumění pro to, co dělá hru zábavnou, plynulou a návykovou. Tyto zkušenosti se snažím promítat do svých vlastních projektů, kde kladu důraz na herní mechaniky, atmosféru a celkový zážitek hráče.</p>
+
+                    <p>Pokud se chcete podívat na některé z her, které jsem vytvořil, prozkoumejte mé projekty!</p>
+            </div>
+        </div>
+      
+        <div class="btn-contact"> 
+            <a href="#" class="btn">Kontaktujte mě</a>
+        </div>
+    </section>
+
+    <!--Design skill-->
+    <section class="skill" id="skill">
+        <h2 class="heading"><span>Dovednosti</span></h2>
+
+        <div class="skill-row">
+                <div class="skill-column">
+                    <div>
+                    <h2 class="title">Frontend</h2>                    
+                    <div class="skill-box">
+                        <div class="skill-contenct">
+                            <div class="progress">
+                                <h3><span>HTML</span></h3>
+                                <div class="bar">
+                                    <div class="image-box image1">
+                                        <div class="overlay" id="overlay1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <h3><span>CSS</span></h3>
+                                <div class="bar">
+                                    <div class="image-box image2">
+                                        <div class="overlay" id="overlay1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <h3><span>Javascript</span></h3>
+                                <div class="bar">
+                                    <div class="image-box image3">
+                                        <div class="overlay" id="overlay1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="skill-column">
+                    <div>
+                    <h2 class="title">Backend</h2>
+                    <div class="skill-box">
+                        <div class="skill-contenct">
+                            <div class="progress">
+                                <h3><span>C#</span></h3>
+                                <div class="bar">
+                                    <div class="image-box image4">
+                                        <div class="overlay" id="overlay1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <h3><span>Java</span></h3>
+                                <div class="bar">
+                                    <div class="image-box image5">
+                                        <div class="overlay" id="overlay1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <h3><span>Python</span></h3>
+                                <div class="bar">
+                                    <div class="image-box image6">
+                                        <div class="overlay" id="overlay1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Design Portfolio-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading"><span>Projekty</span></h2>
+    
+        <div class="portfolio-inner">
+            <div class="portfolio-img">
+                <img src="images/webdev.jpg" alt="">
+                <span class="frame-spin"></span>
+            </div>
+    
+            <div class="portfolio-content">
+                <h3>Projekty webdev</h3>
+                <p>Stránky na kterých jsem se v menší nebo větší míře podílel. A to buď z hlediska tvorby, případně spolupráce nebo optimalizace.</p>
+            </div>
+        </div>>
+         
+        <div class="portfolio-inner1">
+            <div class="portfolio-content1">
+                <h3>Aplikace</h3>
+                <p>Tady naleznete několik projektů, převážně menší aplikace. Časem, ale budou přidány do projektu tvořící komplexnejší aplikaci.</p>
+            </div>
+
+            <div class="portfolio-img1">
+                <img src="images/appdev.jpg" alt="">
+                <span class="frame-spin"></span>
+            </div>
+        </div>
+
+        <div class="portfolio-inner">
+            <div class="portfolio-img">
+                <img src="images/gamedev.jpg" alt="">
+                <span class="frame-spin"></span>
+            </div>
+    
+            <div class="portfolio-content">
+                <h3>Hry</h3>
+                <p>Zde naleznete několik menších projektů. Dětské krůčky k něčemu většímu. Na něčem se začít musí. </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!---Kontakt desing-->
+    <section class="contact" id="contact">
+        <h2 class="heading"><span>Kontaktujte mě.</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Vaše jméno" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="E-mailová adresa" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Telefonní číslo" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Předmět e-mailu" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Vaše zpráva" required></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn-contact">Odeslat</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
